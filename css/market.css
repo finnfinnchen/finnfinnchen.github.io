@@ -1,0 +1,235 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.T_guide{
+  fill:#FFFFFF;
+  font-family:'Arial';
+  font-size:21px;
+}
+.welcome{
+  fill:#FFFFFF;
+}
+.st21{
+  fill:#FFFFFF;
+}
+.bk_market{
+  fill:#E3FFFA;
+}
+/*talk_frame*/
+.st4{
+  opacity:0.8;
+}
+.st5{
+  opacity:0.95;
+  fill:#FFFFFF;
+  stroke:#000000;
+  stroke-width:3.0883;
+  stroke-miterlimit:10;
+}
+/*activepart*/
+.animate{
+  display:block;
+}
+.active{
+  cursor:url("/pic/talk_cursor.ico"),pointer;
+  opacity:0;
+}
+.avo{
+  display:none;
+}
+.avo.visible{
+  display: block;
+}
+.continu {
+  cursor: pointer;
+  display: none;
+}
+.continu.visible {
+  cursor: pointer;
+  display: block;
+}
+.continu2 {
+  display: none;
+}
+/*talk hidden*/
+.talk{
+  display:none;
+}
+.talk.visible{
+  display:block;
+}
+.x{
+  cursor: pointer;
+}
+.reference{
+  opacity:0;
+}
+/*farmers's face*/
+.st6{
+  fill:#FFDED4;
+  stroke:#000000;
+  stroke-width:3;
+  stroke-miterlimit:10;
+}
+.st7{
+  fill:#354B86;
+  stroke:#000000;
+  stroke-width:3;
+  stroke-miterlimit:10;
+}
+.st8{
+  fill:none;
+  stroke:#000000;
+  stroke-width:3;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+}
+.st11{
+  fill:#FFDDD2;
+  stroke:#000000;
+  stroke-width:3;
+  stroke-miterlimit:10;
+}
+.st12{
+  fill:#61BEB9;
+  stroke:#000000;
+  stroke-width:2.3116;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}
+.st13{
+  fill:#FFFFFF;
+  stroke:#000000;
+  stroke-width:2.3116;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}
+.st22{
+  fill:#FFDED4;
+  stroke:#000000;
+  stroke-width:2.5446;
+  stroke-miterlimit:10;
+}
+.st23{
+  fill:none;
+  stroke:#000000;
+  stroke-width:2.5446;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+}
+.st24{
+  fill:#354B86;
+  stroke:#000000;
+  stroke-width:2.686;
+  stroke-miterlimit:10;
+}
+.st25{
+  fill:#FFDDD2;
+  stroke:#000000;
+  stroke-width:2.8552;
+  stroke-miterlimit:10;
+}
+.st26{
+  fill:#FFDED4;
+  stroke:#000000;
+  stroke-width:2.8552;
+  stroke-miterlimit:10;
+}
+.st27{
+  fill:#354B86;
+  stroke:#000000;
+  stroke-width:2.8552;
+  stroke-miterlimit:10;
+}
+.st28{
+  opacity:0.9;
+  fill:#FFFFFF;
+  stroke:#000000;
+  stroke-width:3.0883;
+  stroke-miterlimit:10;
+}
+.st29{
+  fill:#FFDDD2;
+  stroke:#000000;
+  stroke-width:3.0883;
+  stroke-miterlimit:10;
+}
+
+
+
+/*talk text setting*/
+.T_A{
+  font-family:'ArialMT';
+  font-size:18px;
+
+}
+.T_R{
+  fill:#FFFFFF;
+  font-family:'Arial-BoldMT';
+  font-size:21px;
+}
+.T_RR{
+  fill:#FFFFFF;
+  font-family:'ArialMT';
+  font-size:18px;
+}
+.T_D{
+  fill:#FFFFFF;
+  font-family:'Arial-ItalicMT';
+  font-size:14px;
+}
+.T_RB{
+  fill:#FFFFFF;
+  font-family:'Arial-BoldMT';
+  font-size:18px;
+}
+.T_AW{
+  font-family:'ArialMT';
+  font-size:18px;
+  cursor: pointer;
+  text-decoration:none;
+}
+.T_AW:hover{
+  text-decoration:underline;
+}
+
+/*closed talk frame*/
+.st18{
+  fill:#FFFFFF;
+  stroke:#000000;
+  stroke-width:3.0883;
+  stroke-miterlimit:10;
+}
+.st19{
+  opacity:0;
+}
+
+/*buy it*/
+.st20{
+  fill:#FFEFEA;
+  stroke:#000000;
+  stroke-width:
+  2;stroke-miterlimit:10;
+}
+.T_confirm{
+  font-size:18px;
+  font-family:'Arial-BoldMT';
+}
+.unit{
+  font-family:'ArialMT';
+  font-size:14px;
+}
+.prices{
+  font-family:'Arial-BoldMT';
+  font-size:18.3518px;
+}
+
+/*backgroundpic*/
+body
+  {
+  background-color:#E3FFFA;
+  scroll-behavior:smooth;
+  }
