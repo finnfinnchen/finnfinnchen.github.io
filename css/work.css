@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.bk{
+  position: relative;
+  fill:white;
+}
+body
+  {
+  scroll-behavior:smooth;
+  }
+.btn{
+  cursor: pointer;
+}
+/**/
+#navi{
+  display: none;
+}
+.navi_text{
+  fill:black;
+  font-family:'Aspira-Demi';
+  font-size:72px;
+}
+.navi_text:hover{
+  fill:#00FF84;
+  text-decoration: underline;
+}
+.st5{
+  fill:black;
+}
+.st5:hover{
+  fill:#00FF84;
+}
+/*cover*/
+.st0{
+  opacity:0.84;fill:#FFFFFF;
+}
+.headline{
+  font-family:'Aspira-Demi';
+  font-size:69.0299px;
+}
+.disc{
+  font-family:'Aspira-Regular';
+  font-size:24.3532px;
+}
+.type{
+  font-family:'Aspira-Regular';
+  font-size:18px;
+}
+
+/*content*/
+.title{
+  font-family:'Aspira-Demi';
+  font-size:48px;
+}
+.content_title{
+  font-family:'Aspira-Medium';
+  font-size:21px;
+}
+.content{
+  font-family:'Aspira-Light';
+  font-size:21px;
+}
+.underline{
+  fill:none;
+  stroke:#000000;
+  stroke-width:3;
+  stroke-miterlimit:10;
+}
+.play{
+  font-family:'Aspira-Demi';
+  font-size:36px;
+}
+.st9{
+  fill:none;
+}
+/*link_angle*/
+.st14{
+  fill:none;
+  stroke:#000000;
+  stroke-width:0.8706;
+  stroke-miterlimit:10;
+}
+.st15{
+  fill:none;
+  stroke:#000000;
+  stroke-miterlimit:10;
+}
+
+/*footer*/
+.footer_line{
+  fill:none;
+  stroke:#000000;
+  stroke-miterlimit:10;
+}
+.footer_text{
+  font-family:'Aspira-Thin';
+  font-size:16px;
+}
+
+/*link_angle*/
+.st14{
+  fill:none;
+  stroke:#000000;
+  stroke-width:0.8706;
+  stroke-miterlimit:10;
+}
+.st15{
+  fill:none;
+  stroke:#000000;
+  stroke-miterlimit:10;
+}

@@ -21,3 +21,20 @@ $("#Navi_Bar").mouseleave(function(){
   $("#project1").mouseleave(function(){
     $("#cover1").css('opacity','0.5');
     });
+    $("#project1").click(function(event){
+    window.location.href="/work_Avomarket.html";
+  });
+
+    $("#project2").mouseenter(function(){
+        $("#cover2").css('opacity','0');
+    });
+    $("#project2").mouseleave(function(){
+      $("#cover2").css('opacity','0.5');
+      });
+
+      $("#project3").mouseenter(function(){
+          $("#cover3").css('opacity','0');
+      });
+      $("#project3").mouseleave(function(){
+        $("#cover3").css('opacity','0.5');
+        });
