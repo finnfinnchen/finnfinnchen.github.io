@@ -16,9 +16,8 @@ $("#click").mouseleave(function(){
     return false;
 });
 // typing homePage
-import (init) from 'ityped';
 const oneElement = document.querySelector('#textTyping')
-init("#textTyping", {
+ityped.init("#textTyping", {
   strings: ['Digital', 'Graphic','Motion'],
   typeSpeed:  100,
   backSpeed:  50,
