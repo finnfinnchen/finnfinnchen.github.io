@@ -68,12 +68,30 @@ body
   stroke-width:3;
   stroke-miterlimit:10;
 }
+.subtitle_text{
+  fill:#FFFFFF;
+  font-family:'Aspira-Regular';
+  font-size:30px;
+}
+.small_title{
+  font-family:'Aspira-Demi';
+  font-size:21px;
+}
+.line_connection{fill:none;
+  stroke:#000000;
+  stroke-width:0.75;
+  stroke-miterlimit:10;
+}
 .play{
   font-family:'Aspira-Demi';
   font-size:36px;
 }
 .st9{
   fill:none;
+}
+.video{
+  display:block;
+  margin:180px;
 }
 /*link_angle*/
 .st14{

@@ -13,3 +13,7 @@ $("#Navi_Bar").mouseleave(function(){
   $("#close").click(function(){
     $("#navi").css('display','none');
   })
+
+  $("#work").click(function(event){
+    window.location.href="/index.html";
+  });

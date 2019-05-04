@@ -26,6 +26,23 @@ body
   fill:#00FF84;
   text-decoration: underline;
 }
+.bar_hover{
+  display:none;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+.logo_line{
+  fill:none;
+  stroke:#FFFFFF;
+  stroke-width:1.0543;
+  stroke-miterlimit:10;
+}
+.logo_movement{
+  display: none;
+  animation-duration: 10s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
 #close:hover{
   fill:#00FF84;
 }
@@ -88,12 +105,12 @@ body
     stroke-miterlimit:10;
   }
   .cover{
-    opacity:0.5;
+    opacity:0.7;
   }
 
 .project_text{
   fill:#00FF84;
-  font-family:'Aspira-Medium';
+  font-family:'Aspira-Demi';
   font-size:60px;
 }
 .project{
@@ -101,6 +118,23 @@ body
 }
 .project:hover{
   opacity:0;
+}
+.project_subtitle{
+  fill:#00FF84;
+  font-family:'Aspira-Thin';
+  font-size:18px;
+}
+.cooome{
+  fill:#FFFFFF;
+  font-family:'Aspira-Medium';
+  font-size:64px;
+}
+.comeout{
+  display:none;
+}
+.comeout {
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 /*about*/
 .text_foot{
