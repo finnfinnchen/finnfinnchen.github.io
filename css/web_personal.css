@@ -13,6 +13,18 @@ body
 .bk{
     opacity:0.95;
   }
+.cover_headline1{
+  fill:#FFFFFF;
+  font-family:'Aspira-Demi';;
+  font-size:99.6835px;
+  letter-spacing:7px;
+}
+.cover_headline2{
+  fill:#FFFFFF;
+  font-family:'Aspira-Thin';
+  font-size:99.6835px;
+  letter-spacing:7px;
+}
 .navi_c{
     display:none;
 }

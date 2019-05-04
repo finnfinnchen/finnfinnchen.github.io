@@ -15,6 +15,19 @@ $("#click").mouseleave(function(){
       $("html,body").scrollTop(target_top);
     return false;
 });
+// typing homePage
+import (init) from 'ityped';
+const oneElement = document.querySelector('#textTyping')
+init("#textTyping", {
+  strings: ['Digital', 'Graphic','Motion'],
+  typeSpeed:  100,
+  backSpeed:  50,
+  backDelay:  500,
+  loop: true,
+  showCursor: true,
+  disableBackTyping: false,
+  cursorChar: "|",
+})
   //menu
 $("#Navi_Bar").click(function(){
   $("#navi").css('display','block');
