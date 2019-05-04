@@ -16,16 +16,29 @@ $("#click").mouseleave(function(){
     return false;
 });
   //menu
+function animateCSS(element, animationName, callback) {
+    const node = document.querySelector(element)
+    node.classList.add('animated', animationName)
+
+    function handleAnimationEnd() {
+        node.classList.remove('animated', animationName)
+        node.removeEventListener('animationend', handleAnimationEnd)
+
+        if (typeof callback === 'function') callback()
+    }
+
+    node.addEventListener('animationend', handleAnimationEnd)
+}
 $("#Navi_Bar").click(function(){
   $("#navi").css('display','block');
-  const element =  document.querySelector('#navi')
-  element.classList.add('animated', 'slideInRight')
+  animateCSS('#navi', 'slideInRight');
   $.ajaxSetup({cache : false })
 })
 
 $("#close").click(function(){
-  const element =  document.querySelector('#navi')
-  element.classList.add('animated', 'slideOutRight')
+  animateCSS('#navi', 'slideOutRight',function(){
+    $("#navi").css('display','none');
+  });
   $.ajaxSetup({cache : false })
 })
 
