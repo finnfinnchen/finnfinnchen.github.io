@@ -1,3 +1,47 @@
+@font-face {
+    font-family: 'aspirademi';
+    src: url('/font/aspira_demi-webfont.woff2') format('woff2'),
+         url('/font/aspira_demi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aspiralight';
+    src: url('/font/aspira_light-webfont.woff2') format('woff2'),
+         url('/font/aspira_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aspiramedium';
+    src: url('/font/aspira_medium-webfont.woff2') format('woff2'),
+         url('/font/aspira_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aspiraregular';
+    src: url('/font/aspira_regular-webfont.woff2') format('woff2'),
+         url('/font/aspira_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aspirathin';
+    src: url('/font/aspira_thin-webfont.woff2') format('woff2'),
+         url('/font/aspira_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 *{
   margin: 0;
   padding: 0;
@@ -15,29 +59,48 @@ body
   }
 .cover_headline1{
   fill:#FFFFFF;
-  font-family:'Aspira-Demi';;
+  font-family:'aspirademi';;
   font-size:99.6835px;
   letter-spacing:7px;
 }
 .cover_headline2{
   fill:#FFFFFF;
-  font-family:'Aspira-Thin';
+  font-family:'aspirathin';
   font-size:99.6835px;
   letter-spacing:7px;
 }
+
 .navi_c{
     display:none;
 }
 
 .navi_text{
+  position: relative;
   fill:#FFFFFF;
-  font-family:'Aspira-Demi';
+  font-family:'aspirademi';
   font-size:72px;
+  text-decoration: none;
 }
 .navi_text:hover{
   fill:#00FF84;
-  text-decoration: underline;
 }
+.navi_text:before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: #00FF84;
+  transition: all .3s ease-in-out 0s;
+}
+
+.navi_text:hover:before{
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
 .bar_hover{
   display:none;
   animation-duration: 5s;
@@ -65,6 +128,7 @@ body
 .logo_click{
   opacity:0;
 }
+
 .st1{
   fill:none;
   stroke:#00FF84;
@@ -122,7 +186,7 @@ body
 
 .project_text{
   fill:#00FF84;
-  font-family:'Aspira-Demi';
+  font-family:'aspirademi';
   font-size:60px;
 }
 .project{
@@ -133,12 +197,12 @@ body
 }
 .project_subtitle{
   fill:#00FF84;
-  font-family:'Aspira-Thin';
+  font-family:'aspirathin';
   font-size:18px;
 }
 .cooome{
   fill:#FFFFFF;
-  font-family:'Aspira-Medium';
+  font-family:'aspiramedium';
   font-size:64px;
 }
 .comeout{
@@ -151,17 +215,17 @@ body
 /*about*/
 .text_foot{
   fill:#FFFFFF;
-  font-family:'Aspira-Thin';
+  font-family:'aspirathin';
   font-size:16px;
 }
 .text_intro{
   fill:#FFFFFF;
-  font-family:'Aspira-Thin';
+  font-family:'aspirathin';
   font-size:24px;
 }
 .text_intro_light{
   fill:#00FF84;
-  font-family:'Aspira-Thin';
+  font-family:'aspirathin';
   font-size:24px;
 }
 .line_footer{
@@ -171,7 +235,7 @@ body
 }
 .text_contact{
   fill:#FFFFFF;
-  font-family:'Aspira-Regular';
+  font-family:'aspiraregular';
   font-size:24px;
 }
 
@@ -193,14 +257,9 @@ body
 
 
 
-#graphic {
+#headline {
   -webkit-animation: squiggly-anim 0.34s linear infinite;
           animation: squiggly-anim 0.34s linear infinite;
-}
-#aboutMe_logo{
-  -webkit-animation: squiggly-anim 0.34s linear infinite;
-          animation: squiggly-anim 0.34s linear infinite;
-
 }
 @-webkit-keyframes squiggly-anim {
   0% {
@@ -245,4 +304,31 @@ body
     -webkit-filter: url("#squiggly-4");
             filter: url("#squiggly-4");
   }
+}
+
+.ityped-cursor {
+    font-size: 99px;
+    color: #FFF;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
 }

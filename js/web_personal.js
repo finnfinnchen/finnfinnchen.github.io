@@ -15,13 +15,14 @@ $("#click").mouseleave(function(){
       $("html,body").scrollTop(target_top);
     return false;
 });
+
 // typing homePage
 const oneElement = document.querySelector('#textTyping')
 ityped.init("#textTyping", {
   strings: ['Digital', 'Graphic','Motion'],
   typeSpeed:  100,
   backSpeed:  50,
-  backDelay:  500,
+  backDelay:  550,
   loop: true,
   showCursor: true,
   disableBackTyping: false,

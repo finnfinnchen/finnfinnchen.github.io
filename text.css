@@ -1,0 +1,61 @@
+.coverAnimate {
+    position:relative;
+    width: 1441px;
+    height: 800px;
+}
+
+.animation {
+    width: 1441px;
+    height: 800px;
+    background-image: url("./img/music1.png");
+    background-size: 1441px 800px;
+    background-repeat: no-repeat;
+    animation-name: keyframes-cover_animate;
+    animation-duration: 2.34s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: steps(1);
+}
+
+@keyframes keyframes-cover_animate {
+    0% {
+        width: 1441px;
+        height: 800px;
+        background-image: url("./img/music1.png");
+        background-size: 1441px 800px;
+    }
+
+    11.11% {
+        background-image: url("./img/music2.png");
+    }
+
+    22.22% {
+        background-image: url("./img/music3.png");
+    }
+
+    33.33% {
+        background-image: url("./img/music4.png");
+    }
+
+    44.44% {
+        background-image: url("./img/music5.png");
+    }
+
+    55.56% {
+        background-image: url("./img/music6.png");
+    }
+
+    66.67% {
+        background-image: url("./img/music7.png");
+    }
+
+    77.78% {
+        background-image: url("./img/music8.png");
+    }
+
+    88.89%,
+    100% {
+        background-image: url("./img/music9.png");
+    }
+}

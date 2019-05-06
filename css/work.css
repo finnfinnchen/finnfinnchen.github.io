@@ -1,3 +1,48 @@
+@font-face {
+    font-family: 'aspirademi';
+    src: url('/font/aspira_demi-webfont.woff2') format('woff2'),
+         url('/font/aspira_demi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aspiralight';
+    src: url('/font/aspira_light-webfont.woff2') format('woff2'),
+         url('/font/aspira_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aspiramedium';
+    src: url('/font/aspira_medium-webfont.woff2') format('woff2'),
+         url('/font/aspira_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aspiraregular';
+    src: url('/font/aspira_regular-webfont.woff2') format('woff2'),
+         url('/font/aspira_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aspirathin';
+    src: url('/font/aspira_thin-webfont.woff2') format('woff2'),
+         url('/font/aspira_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -19,7 +64,7 @@ body
 }
 .navi_text{
   fill:black;
-  font-family:'Aspira-Demi';
+  font-family:'aspirademi';
   font-size:72px;
 }
 .navi_text:hover{
@@ -33,33 +78,55 @@ body
   fill:#00FF84;
 }
 /*cover*/
+.st6{
+  fill:none;
+  stroke:#00FF84;
+  stroke-width:1.0543;
+  stroke-miterlimit:10;
+}
+.st2{
+  fill:#00FF84;
+}
+.logo_line{
+  fill:none;
+  stroke:#000;
+  stroke-width:1.5;
+  stroke-miterlimit:10;
+}
+.logo_fill{
+  fill:#000;
+}
+.logo_click{
+  opacity:0;
+}
+/*cover*/
 .st0{
   opacity:0.84;fill:#FFFFFF;
 }
 .headline{
-  font-family:'Aspira-Demi';
+  font-family:'aspirademi';
   font-size:69.0299px;
 }
 .disc{
-  font-family:'Aspira-Regular';
+  font-family:'aspiraregular';
   font-size:24.3532px;
 }
 .type{
-  font-family:'Aspira-Regular';
+  font-family:'aspiraregular';
   font-size:18px;
 }
 
 /*content*/
 .title{
-  font-family:'Aspira-Demi';
+  font-family:'aspirademi';
   font-size:48px;
 }
 .content_title{
-  font-family:'Aspira-Medium';
+  font-family:'aspiramedium';
   font-size:21px;
 }
 .content{
-  font-family:'Aspira-Light';
+  font-family:'aspiralight';
   font-size:21px;
 }
 .underline{
@@ -70,11 +137,11 @@ body
 }
 .subtitle_text{
   fill:#FFFFFF;
-  font-family:'Aspira-Regular';
+  font-family:'aspiraregular';
   font-size:30px;
 }
 .small_title{
-  font-family:'Aspira-Demi';
+  font-family:'aspirademi';
   font-size:21px;
 }
 .line_connection{fill:none;
@@ -83,7 +150,7 @@ body
   stroke-miterlimit:10;
 }
 .play{
-  font-family:'Aspira-Demi';
+  font-family:'aspirademi';
   font-size:36px;
 }
 .st9{
@@ -113,7 +180,7 @@ body
   stroke-miterlimit:10;
 }
 .footer_text{
-  font-family:'Aspira-Thin';
+  font-family:'aspirathin';
   font-size:16px;
 }
 
