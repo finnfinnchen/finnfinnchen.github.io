@@ -57,3 +57,7 @@ $("#Navi_Bar").mouseleave(function(){
   $("#about").click(function(event){
     window.location.href="/index.html#aboutMe";
   });
+//goavocado
+$("#avocadoWeb").click(function(event){
+  window.open("/avocado.html","_blank");
+});

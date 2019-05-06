@@ -153,6 +153,10 @@ body
   font-family:'aspirademi';
   font-size:36px;
 }
+.play:hover{
+  fill:#00FF84;
+  text-decoration: underline;
+}
 .st9{
   fill:none;
 }
