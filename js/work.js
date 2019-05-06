@@ -39,25 +39,71 @@ $("#Navi_Bar").mouseleave(function(){
   $("#Navi_Bar_hover").css('display','none');
   });
   $("#Navi_Bar").click(function(){
-    $("#navi").css('display','block');
-    animateCSS('#navi', 'slideInRight');
+    $("#menu_cover").css('display','block');
+    $("#menu_selector").css('display','block');
+    animateCSS('#menu_cover', 'slideInRight');
+    animateCSS('#navi_work', 'fadeIn');
+    animateCSS('#navi_about', 'fadeIn');
+    animateCSS('#navi_resume', 'fadeIn');
+    $("html, body").css({
+    "overflow" : "hidden"
+  })
     $.ajaxSetup({cache : false })
   })
-
-  $("#close").click(function(){
-    animateCSS('#navi', 'slideOutRight',function(){
-      $("#navi").css('display','none');
+//menu selector
+$(".navi_text").click(function(){
+    animateCSS('#menu_cover', 'slideOutRight',function(){
+      $("#menu_cover").css('display','none');
     });
+    animateCSS('#menu_selector', 'fadeOut',function(){
+      $("#menu_selector").css('display','none');
+    });
+    $("html, body").css({
+  	"overflow" : "auto"
+  })
     $.ajaxSetup({cache : false })
   })
 
-  $("#work").click(function(event){
+$(".close").click(function(){
+    animateCSS('#menu_cover', 'slideOutRight',function(){
+      $("#menu_cover").css('display','none');
+    });
+    animateCSS('#menu_selector', 'fadeOut',function(){
+      $("#menu_selector").css('display','none');
+    });
+    $("html, body").css({
+  	"overflow" : "auto"
+  })
+      $.ajaxSetup({cache : false })
+  })
+  //close effect
+  $("#before").mouseenter(function(){
+    $(this).css('opacity','0');
+    $("#after").css('display','block');
+    const element =  document.querySelector('#after')
+    element.classList.add('animated', 'rubberBand')
+  });
+  $("#before").mouseleave(function(){
+    $(this).css('opacity','100');
+    $("#after").css('display','none');
+    });
+
+  $("#navi_work").click(function(event){
     window.location.href="/index.html#workProject";
   });
-  $("#about").click(function(event){
+  $("#navi_about").click(function(event){
     window.location.href="/index.html#aboutMe";
   });
 //goavocado
 $("#avocadoWeb").click(function(event){
+  window.open("/avocado.html","_blank");
+});
+$("#phase1").click(function(event){
+  window.open("https://densitydesign.github.io/teaching-dd14/es01/group03/#firstPage","_blank");
+});
+$("#phase2").click(function(event){
+  window.open("https://densitydesign.github.io/teaching-dd14/es02/group03/","_blank");
+});
+$("#phase3").click(function(event){
   window.open("/avocado.html","_blank");
 });

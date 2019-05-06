@@ -59,18 +59,55 @@ body
   cursor: pointer;
 }
 /**/
-#navi{
-  display: none;
+#menu_cover{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #FFF;
+  display:none;
+}
+
+#menu_selector{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  text-align:center;
+  top:30%;
+  display:none;
+  animation-duration: 0.5s;
+}
+
+.close{
+  position:fixed;
+  top:0;
+  right:0;
+}
+
+#navi_work {
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
+}
+#navi_about {
+  animation-duration: 1.5s;
+  animation-delay: 0.4s;
+}
+#navi_resume {
+  animation-duration: 1.5s;
+  animation-delay: 0.8s;
 }
 .navi_text{
-  fill:black;
+  color:black;
   font-family:'aspirademi';
-  font-size:72px;
+  font-size:50px;
+  position: relative;
+  text-decoration: none;
 }
 .navi_text:hover{
-  fill:#00FF84;
-  text-decoration: underline;
+  color:#00FF84;
 }
+
 .st5{
   fill:black;
 }
@@ -99,6 +136,12 @@ body
 .logo_click{
   opacity:0;
 }
+.logo_movement{
+  display: none;
+  animation-duration: 10s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
 /*cover*/
 .st0{
   opacity:0.84;fill:#FFFFFF;
@@ -112,7 +155,7 @@ body
   font-size:24.3532px;
 }
 .type{
-  font-family:'aspiraregular';
+  font-family:'aspirathin';
   font-size:18px;
 }
 
@@ -125,9 +168,22 @@ body
   font-family:'aspiramedium';
   font-size:21px;
 }
+#phase1:hover{
+  fill:#00FF84;
+  text-decoration: underline;
+}
+#phase2:hover{
+  fill:#00FF84;
+  text-decoration: underline;
+}
 .content{
   font-family:'aspiralight';
   font-size:21px;
+}
+.viewsite{
+  font-size:24px;
+  font-family:'aspirathin';
+  fill:#FFFFFF;
 }
 .underline{
   fill:none;

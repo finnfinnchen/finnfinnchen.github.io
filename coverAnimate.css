@@ -1,14 +1,16 @@
+
 .coverAnimate {
     position:absolute;
-    width: 1441px;
-    height: 800px;
+    width: 100%;
+    height: 56%;
 }
 
 .animation {
-    width: 1441px;
-    height: 800px;
-    background-image: url("./img/music1.png");
-    background-size: 1441px 800px;
+    width: 100%;
+    height: 0;
+    padding-bottom: 55.517002081887576%;
+    background-image: url("./img/sprites.png");
+    background-size: 900% 100%;
     background-repeat: no-repeat;
     animation-name: keyframes-cover_animate;
     animation-duration: 2.34s;
@@ -20,42 +22,43 @@
 
 @keyframes keyframes-cover_animate {
     0% {
-        width: 1441px;
-        height: 800px;
-        background-image: url("./img/music1.png");
-        background-size: 1441px 800px;
+        width: 100%;
+        height: 0;
+        padding-bottom: 55.517002081887576%;
+        background-image: url("./img/sprites.png");
+        background-size: 900% 100%;
     }
 
     11.11% {
-        background-image: url("./img/music2.png");
+        background-position: 12.5% 0%;
     }
 
     22.22% {
-        background-image: url("./img/music3.png");
+        background-position: 25% 0%;
     }
 
     33.33% {
-        background-image: url("./img/music4.png");
+        background-position: 37.5% 0%;
     }
 
     44.44% {
-        background-image: url("./img/music5.png");
+        background-position: 50% 0%;
     }
 
     55.56% {
-        background-image: url("./img/music6.png");
+        background-position: 62.5% 0%;
     }
 
     66.67% {
-        background-image: url("./img/music7.png");
+        background-position: 75% 0%;
     }
 
     77.78% {
-        background-image: url("./img/music8.png");
+        background-position: 87.5% 0%;
     }
 
     88.89%,
     100% {
-        background-image: url("./img/music9.png");
+        background-position: 100% 0%;
     }
 }

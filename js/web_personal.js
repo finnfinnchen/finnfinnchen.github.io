@@ -12,7 +12,9 @@ $("#click").mouseleave(function(){
   });
   $("#click").click(function(event){
     var target_top = $("#homePage").offset().top;
-      $("html,body").scrollTop(target_top);
+    $("html,body").animate(
+      {scrollTop: target_top}, 500 /*scroll实现定位滚动*/
+    );/*让整个页面可以滚动*/
     return false;
 });
 
@@ -28,7 +30,7 @@ ityped.init("#textTyping", {
   disableBackTyping: false,
   cursorChar: "|",
 })
-  //menu
+  //menu selector
 function animateCSS(element, animationName, callback) {
     const node = document.querySelector(element)
     node.classList.add('animated', animationName)
@@ -43,20 +45,53 @@ function animateCSS(element, animationName, callback) {
     node.addEventListener('animationend', handleAnimationEnd)
 }
 $("#Navi_Bar").click(function(){
-  $("#navi").css('display','block');
-  animateCSS('#navi', 'slideInRight');
+  $("#menu_cover").css('display','block');
+  $("#menu_selector").css('display','block');
+  animateCSS('#menu_cover', 'slideInRight');
+  animateCSS('#navi_work', 'fadeIn');
+  animateCSS('#navi_about', 'fadeIn');
+  animateCSS('#navi_resume', 'fadeIn');
+  $("html, body").css({
+	"overflow" : "hidden"
+})
   $.ajaxSetup({cache : false })
 })
-
-$("#close").click(function(){
-  animateCSS('#navi', 'slideOutRight',function(){
-    $("#navi").css('display','none');
+$(".navi_text").click(function(){
+  animateCSS('#menu_cover', 'slideOutRight',function(){
+    $("#menu_cover").css('display','none');
   });
+  animateCSS('#menu_selector', 'fadeOut',function(){
+    $("#menu_selector").css('display','none');
+  });
+  $("html, body").css({
+	"overflow" : "auto"
+})
   $.ajaxSetup({cache : false })
 })
-
-
-
+$(".close").click(function(){
+  animateCSS('#menu_cover', 'slideOutRight',function(){
+    $("#menu_cover").css('display','none');
+  });
+  animateCSS('#menu_selector', 'fadeOut',function(){
+    $("#menu_selector").css('display','none');
+  });
+  $("html, body").css({
+	"overflow" : "auto"
+})
+    $.ajaxSetup({cache : false })
+})
+//close
+$("#before").mouseenter(function(){
+  $(this).css('opacity','0');
+  $("#after").css('display','block');
+  const element =  document.querySelector('#after')
+  element.classList.add('animated', 'rubberBand')
+});
+$("#before").mouseleave(function(){
+  $(this).css('opacity','100');
+  $("#after").css('display','none');
+  });
+//navi bar
 $("#Navi_Bar").mouseenter(function(){
     $("#Navi_Bar").css('opacity','0');
     $("#Navi_Bar_hover").css('display','block');
@@ -131,9 +166,9 @@ $("#project6").mouseleave(function(){
 $(document).ready(function(){
 $("#navi_work").click(function(){
   var target_top = $("#workProject").offset().top;
-  $("html,body").animate(
-  {scrollTop: target_top}, 500 /*scroll实现定位滚动*/
-        );/*让整个页面可以滚动*/
+  $("html,body").scrollTop(target_top);
+  //$("html,body").animate(
+  //{scrollTop: target_top}, 500 /*scroll实现定位滚动*/);/*让整个页面可以滚动*/
 return false;
 });
 
@@ -142,10 +177,9 @@ return false;
 $(document).ready(function(){
 $("#navi_about").click(function(){
   var target_top = $("#aboutMe").offset().top;
-  $("html,body").animate(
-    {scrollTop: target_top}, 500 /*scroll实现定位滚动*/
-          );/*让整个页面可以滚动*/
-  //$("html,body").scrollTop(target_top);
+  //$("html,body").animate(
+    //{scrollTop: target_top}, 500 /*scroll实现定位滚动*/);/*让整个页面可以滚动*/
+  $("html,body").scrollTop(target_top);
 });
 
 });

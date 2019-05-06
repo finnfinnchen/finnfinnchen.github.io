@@ -5,6 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" type="text/css" href="/css/work.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
   <title>ChenQixuan</title>
 </head>
 <script src="https://code.jquery.com/jquery-3.0.0.min.js">
@@ -16,7 +17,7 @@
   <div id="Navi_Bar" class="btn" style="position:fixed;right:0;top:0;">
       <img src="/pic_project/bar_black.png">
       </div>
-      <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12%"
+  <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12%"
               	 viewBox="0 0 207 166" style="position:fixed;left:0;" xml:space="preserve">
               	<g id="logo_1" class="logo_movement">
               				<path class="st6" d="M72,118.3l22.5-40.9L74.8,52.7l15.3-4.8"/>
@@ -44,22 +45,16 @@
               	<rect x="68" y="33" class="logo_click" width="89" height="92"/>
               </g>
               </svg>
+  <div id="menu_cover">
+        <img class="close btn" id="after" src="/pic_project/close2.png">
+        <img class="close btn" id="before" src="/pic_project/close3.png">
+      </div>
+  <div id="menu_selector">
+        <p class="navi_text btn" id="navi_work">Work</p>
+        <p class="navi_text btn" id="navi_about">About</p>
+        <p class="navi_text btn" id="navi_resume">Resume</p>
+      </div>
 
-  <svg version="1.1" id="navi" class="navi_c" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22%"
-                 viewBox="0 0 318 900" style="position:fixed;right:0" xml:space="preserve">
-              <rect class="bk" width="318" height="900"/>
-              <g id="work">
-                <text transform="matrix(1 0 0 1 104.9623 250.4986)" class="navi_text btn">Work</text>
-              </g>
-              <g id="resume">
-                <text transform="matrix(1 0 0 1 32.5016 565.6293)" class="navi_text btn">Resume</text>
-              </g>
-              <g id="about">
-                <text transform="matrix(1 0 0 1 80.5865 408.064)" class="navi_text btn">About</text>
-              </g>
-              <polygon id="close"class="st5 btn" points="268.5,31.5 254,46.1 239.5,31.5 232,39 246.6,53.5 232,68 239.5,75.5 254,60.9 268.5,75.5 276,68
-    	261.4,53.5 276,39 "/>
-    </svg>
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1440 12225" style="enable-background:new 0 0 1440 12225;" xml:space="preserve">
@@ -356,7 +351,7 @@
 </g>
 </svg>
 <div id="webinteration" class="video">
-<video width="1080" height="633" controls autoplay muted>
+<video width="100%"  controls autoplay muted>
   <source src="video/demo.mp4" type="video/mp4" />
 Your browser does not support the video tag.
 </video>

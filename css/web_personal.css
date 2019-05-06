@@ -57,6 +57,54 @@ body
 .bk{
     opacity:0.95;
   }
+#menu_cover{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  display:none;
+}
+
+#menu_selector{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  text-align:center;
+  top:30%;
+  display:none;
+  animation-duration: 0.5s;
+}
+#navi_work {
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
+}
+#navi_about {
+  animation-duration: 1.5s;
+  animation-delay: 0.4s;
+}
+#navi_resume {
+  animation-duration: 1.5s;
+  animation-delay: 0.8s;
+}
+.navi_text{
+  position: relative;
+  color:#FFFFFF;
+  font-family:'aspirademi';
+  font-size:50px;
+  text-decoration: none;
+}
+.navi_text:hover{
+  color:#00FF84;
+}
+.close{
+  position:fixed;
+  top:0;
+  right:0;
+}
+
+/*cover text setting*/
 .cover_headline1{
   fill:#FFFFFF;
   font-family:'aspirademi';;
@@ -68,37 +116,6 @@ body
   font-family:'aspirathin';
   font-size:99.6835px;
   letter-spacing:7px;
-}
-
-.navi_c{
-    display:none;
-}
-
-.navi_text{
-  position: relative;
-  fill:#FFFFFF;
-  font-family:'aspirademi';
-  font-size:72px;
-  text-decoration: none;
-}
-.navi_text:hover{
-  fill:#00FF84;
-}
-.navi_text:before{
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -2px;
-  width: 0;
-  height: 2px;
-  background: #00FF84;
-  transition: all .3s ease-in-out 0s;
-}
-
-.navi_text:hover:before{
-  width: 100%;
-  left: 0;
-  right: 0;
 }
 
 .bar_hover{
@@ -118,9 +135,7 @@ body
   animation-delay: 0.5s;
   animation-iteration-count: infinite;
 }
-#close:hover{
-  fill:#00FF84;
-}
+
 
 .st0{
   fill:#030303;
@@ -255,8 +270,268 @@ body
   cursor: pointer;
 }
 
+/*glitch*/
+.filterwrapper {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+}
+#headline_aboutme{
+  -webkit-filter: url(#filter);
+          filter: url(#filter);
+  display: block;
+}
+.cover_H {
+  -webkit-filter: url(#filter);
+          filter: url(#filter);
+  display: block;
+}
 
+.top-r,
+.bot-r,
+.top-g,
+.bot-g {
+  stroke: #ffffff;
+}
 
+.top-r {
+  stroke-width: 100px;
+  -webkit-animation: topani 3.5s linear infinite;
+          animation: topani 3.5s linear infinite;
+}
+
+.bot-r {
+  stroke-width: 100px;
+  -webkit-animation: botani 4s linear infinite;
+          animation: botani 4s linear infinite;
+}
+
+.top-g {
+  stroke-width: 50px;
+  animation: topani 4s linear reverse infinite;
+}
+
+.bot-g {
+  stroke-width: 50%;
+  animation: botani 3.5s linear reverse infinite;
+}
+
+@-webkit-keyframes topani {
+  5% {
+    stroke-width: 19px;
+  }
+  7% {
+    stroke-width: 14px;
+  }
+  15% {
+    stroke-width: 116px;
+  }
+  21% {
+    stroke-width: 54px;
+  }
+  28% {
+    stroke-width: 18px;
+  }
+  32% {
+    stroke-width: 21px;
+  }
+  36% {
+    stroke-width: 110px;
+  }
+  42% {
+    stroke-width: 84px;
+  }
+  53% {
+    stroke-width: 79px;
+  }
+  59% {
+    stroke-width: 122px;
+  }
+  63% {
+    stroke-width: 86px;
+  }
+  70% {
+    stroke-width: 196px;
+  }
+  75% {
+    stroke-width: 85px;
+  }
+  79% {
+    stroke-width: 184px;
+  }
+  89% {
+    stroke-width: 26px;
+  }
+  93% {
+    stroke-width: 176px;
+  }
+  101% {
+    stroke-width: 56px;
+  }
+}
+
+@keyframes topani {
+  5% {
+    stroke-width: 19px;
+  }
+  7% {
+    stroke-width: 14px;
+  }
+  15% {
+    stroke-width: 116px;
+  }
+  21% {
+    stroke-width: 54px;
+  }
+  28% {
+    stroke-width: 18px;
+  }
+  32% {
+    stroke-width: 21px;
+  }
+  36% {
+    stroke-width: 110px;
+  }
+  42% {
+    stroke-width: 84px;
+  }
+  53% {
+    stroke-width: 79px;
+  }
+  59% {
+    stroke-width: 122px;
+  }
+  63% {
+    stroke-width: 86px;
+  }
+  70% {
+    stroke-width: 196px;
+  }
+  75% {
+    stroke-width: 85px;
+  }
+  79% {
+    stroke-width: 184px;
+  }
+  89% {
+    stroke-width: 26px;
+  }
+  93% {
+    stroke-width: 176px;
+  }
+  101% {
+    stroke-width: 56px;
+  }
+}
+@-webkit-keyframes botani {
+  3% {
+    stroke-width: 80px;
+  }
+  10% {
+    stroke-width: 144px;
+  }
+  12% {
+    stroke-width: 83px;
+  }
+  23% {
+    stroke-width: 146px;
+  }
+  29% {
+    stroke-width: 41px;
+  }
+  30% {
+    stroke-width: 69px;
+  }
+  40% {
+    stroke-width: 82px;
+  }
+  43% {
+    stroke-width: 132px;
+  }
+  51% {
+    stroke-width: 129px;
+  }
+  54% {
+    stroke-width: 48px;
+  }
+  63% {
+    stroke-width: 146px;
+  }
+  67% {
+    stroke-width: 183px;
+  }
+  77% {
+    stroke-width: 66px;
+  }
+  82% {
+    stroke-width: 144px;
+  }
+  89% {
+    stroke-width: 12px;
+  }
+  94% {
+    stroke-width: 91px;
+  }
+  97% {
+    stroke-width: 189px;
+  }
+}
+@keyframes botani {
+  3% {
+    stroke-width: 80px;
+  }
+  10% {
+    stroke-width: 144px;
+  }
+  12% {
+    stroke-width: 83px;
+  }
+  23% {
+    stroke-width: 146px;
+  }
+  29% {
+    stroke-width: 41px;
+  }
+  30% {
+    stroke-width: 69px;
+  }
+  40% {
+    stroke-width: 82px;
+  }
+  43% {
+    stroke-width: 132px;
+  }
+  51% {
+    stroke-width: 129px;
+  }
+  54% {
+    stroke-width: 48px;
+  }
+  63% {
+    stroke-width: 146px;
+  }
+  67% {
+    stroke-width: 183px;
+  }
+  77% {
+    stroke-width: 66px;
+  }
+  82% {
+    stroke-width: 144px;
+  }
+  89% {
+    stroke-width: 12px;
+  }
+  94% {
+    stroke-width: 91px;
+  }
+  97% {
+    stroke-width: 189px;
+  }
+}
+
+/*svg fliter
 #headline {
   -webkit-animation: squiggly-anim 0.34s linear infinite;
           animation: squiggly-anim 0.34s linear infinite;
