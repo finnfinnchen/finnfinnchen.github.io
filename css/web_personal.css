@@ -310,7 +310,13 @@ height:20%;
           filter: url(#filter);
   display: block;
 }
+
 .cover_H {
+  -webkit-filter: url(#filter);
+          filter: url(#filter);
+  display: block;
+}
+.cover_H2 {
   -webkit-filter: url(#filter);
           filter: url(#filter);
   display: block;
