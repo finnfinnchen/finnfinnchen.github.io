@@ -1,4 +1,6 @@
-
+window.onload=function(){
+$(".loading").fadeOut();
+}
 //logo homePage
 $("#click").mouseenter(function(){
     $("#logo_2").css('opacity','0');
@@ -44,6 +46,7 @@ function animateCSS(element, animationName, callback) {
 
     node.addEventListener('animationend', handleAnimationEnd)
 }
+
 $("#Navi_Bar").click(function(){
   $("#menu_cover").css('display','block');
   $("#menu_selector").css('display','block');
@@ -56,6 +59,7 @@ $("#Navi_Bar").click(function(){
 })
   $.ajaxSetup({cache : false })
 })
+
 $(".navi_text").click(function(){
   animateCSS('#menu_cover', 'slideOutRight',function(){
     $("#menu_cover").css('display','none');
@@ -68,6 +72,7 @@ $(".navi_text").click(function(){
 })
   $.ajaxSetup({cache : false })
 })
+
 $(".close").click(function(){
   animateCSS('#menu_cover', 'slideOutRight',function(){
     $("#menu_cover").css('display','none');
@@ -80,6 +85,7 @@ $(".close").click(function(){
 })
     $.ajaxSetup({cache : false })
 })
+
 //close
 $("#before").mouseenter(function(){
   $(this).css('opacity','0');
@@ -91,6 +97,7 @@ $("#before").mouseleave(function(){
   $(this).css('opacity','100');
   $("#after").css('display','none');
   });
+
 //navi bar
 $("#Navi_Bar").mouseenter(function(){
     $("#Navi_Bar").css('opacity','0');

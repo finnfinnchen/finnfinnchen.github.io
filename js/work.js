@@ -1,4 +1,6 @@
-
+window.onload=function(){
+$(".loading").fadeOut();
+}
 //logo homePage
 $("#click").mouseenter(function(){
     $("#logo_2").css('opacity','0');
