@@ -141,12 +141,13 @@ $("#Navi_Bar").mouseleave(function(){
 });
 
 $("#project4").mouseenter(function(){
-  $("#text4").css('display','block')
-    const element =  document.querySelector('#text4')
-    element.classList.add('animated', 'bounce')
+    $("#cover4").css('opacity','0');
 });
 $("#project4").mouseleave(function(){
-  $("#text4").css('display','none')
+  $("#cover4").css('opacity','0.7');
+});
+$("#project4").click(function(event){
+window.location.href="/work_Carissima.html";
 });
 
 $("#project5").mouseenter(function(){

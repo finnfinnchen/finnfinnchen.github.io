@@ -162,41 +162,44 @@ height:20%;
 }
 /*cover*/
 .st0{
-  opacity:0.84;fill:#FFFFFF;
+  opacity:0.84;
 }
 .headline{
-  font-family:'aspirademi';
-  font-size:69.0299px;
+  font-family:'Roboto-Medium';
+  fill:#FFFFFF;
+  font-size:69px;
 }
 .disc{
-  font-family:'aspiraregular';
-  font-size:24.3532px;
+  font-family:'Roboto-Light';
+  fill:#FFFFFF;
+  font-size:24px;
 }
 .type{
-  font-family:'aspirathin';
-  font-size:18px;
+  font-family:'Roboto-Light';
+  font-size:16px;
+  fill:#FFFFFF;
 }
 
 /*content*/
 .title{
-  font-family:'aspirademi';
+  font-family:'Roboto-Medium';
   font-size:48px;
 }
 .content_title{
-  font-family:'aspiramedium';
-  font-size:21px;
+  font-family:'Roboto-Regular';
+  font-size:16px;
 }
-#phase1:hover{
+.content_grey{
+  fill:#7D7D7D;
+}
+.phase:hover{
   fill:#00FF84;
   text-decoration: underline;
 }
-#phase2:hover{
-  fill:#00FF84;
-  text-decoration: underline;
-}
+
 .content{
-  font-family:'aspiralight';
-  font-size:21px;
+  font-family:'Roboto-Light';
+  font-size:16px;
 }
 .viewsite{
   font-size:24px;
@@ -210,12 +213,11 @@ height:20%;
   stroke-miterlimit:10;
 }
 .subtitle_text{
-  fill:#FFFFFF;
-  font-family:'aspiraregular';
+  font-family:'Roboto-Regular';
   font-size:30px;
 }
 .small_title{
-  font-family:'aspirademi';
+  font-family:'Roboto-Regular';
   font-size:21px;
 }
 .line_connection{fill:none;
@@ -224,8 +226,8 @@ height:20%;
   stroke-miterlimit:10;
 }
 .play{
-  font-family:'aspirademi';
-  font-size:36px;
+  font-family:'Roboto-Medium';
+  font-size:30px;
 }
 .play:hover{
   fill:#00FF84;
@@ -236,7 +238,9 @@ height:20%;
 }
 .video{
   display:block;
-  margin:180px;
+  margin:80px;
+  position:relative;
+  left:11%;
 }
 /*link_angle*/
 .st14{
@@ -251,6 +255,10 @@ height:20%;
   stroke-miterlimit:10;
 }
 
+.blue{
+  fill:#A8BAD9;
+}
+
 /*footer*/
 .footer_line{
   fill:none;
@@ -258,7 +266,7 @@ height:20%;
   stroke-miterlimit:10;
 }
 .footer_text{
-  font-family:'aspirathin';
+  font-family:'Roboto-Light';
   font-size:16px;
 }
 
@@ -272,5 +280,11 @@ height:20%;
 .st15{
   fill:none;
   stroke:#000000;
+  stroke-miterlimit:10;
+}
+.link_line{
+  fill:none;
+  stroke:#000000;
+  stroke-width:0.5;
   stroke-miterlimit:10;
 }
