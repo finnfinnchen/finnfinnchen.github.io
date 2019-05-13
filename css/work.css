@@ -8,40 +8,29 @@
 }
 
 @font-face {
-    font-family: 'aspiralight';
-    src: url('/font/aspira_light-webfont.woff2') format('woff2'),
-         url('/font/aspira_light-webfont.woff') format('woff');
+    font-family: 'Roboto-Light';
+    src: url('font/Roboto-Light.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'aspiramedium';
-    src: url('/font/aspira_medium-webfont.woff2') format('woff2'),
-         url('/font/aspira_medium-webfont.woff') format('woff');
+    font-family: 'Roboto-Regular';
+    src: url('font/Roboto-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'aspiraregular';
-    src: url('/font/aspira_regular-webfont.woff2') format('woff2'),
-         url('/font/aspira_regular-webfont.woff') format('woff');
+    font-family: 'Roboto-Medium';
+    src: url('font/Roboto-Medium.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 
 }
 
-@font-face {
-    font-family: 'aspirathin';
-    src: url('/font/aspira_thin-webfont.woff2') format('woff2'),
-         url('/font/aspira_thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 *{
   margin: 0;
@@ -218,7 +207,7 @@ height:20%;
 }
 .small_title{
   font-family:'Roboto-Regular';
-  font-size:21px;
+  font-size:18px;
 }
 .line_connection{fill:none;
   stroke:#000000;
