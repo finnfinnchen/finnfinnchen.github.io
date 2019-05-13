@@ -8,24 +8,29 @@
 }
 
 @font-face {
-    font-family: 'Roboto-Light';
-    src: url('font/Roboto-Light.ttf') format('ttf');
+    font-family: 'robotolight';
+    src: url('font/roboto-light-webfont.woff2') format('woff2'),
+         url('font/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('font/roboto-medium-webfont.woff2') format('woff2'),
+         url('font/roboto-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
-@font-face {
-    font-family: 'Roboto-Regular';
-    src: url('font/Roboto-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
 
-}
+
 
 @font-face {
-    font-family: 'Roboto-Medium';
-    src: url('font/Roboto-Medium.ttf') format('ttf');
+    font-family: 'robotoregular';
+    src: url('font/roboto-regular-webfont.woff2') format('woff2'),
+         url('font/roboto-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -154,28 +159,28 @@ height:20%;
   opacity:0.84;
 }
 .headline{
-  font-family:'Roboto-Medium';
+  font-family:'robotomedium';
   fill:#FFFFFF;
   font-size:69px;
 }
 .disc{
-  font-family:'Roboto-Light';
+  font-family:'robotolight';
   fill:#FFFFFF;
   font-size:24px;
 }
 .type{
-  font-family:'Roboto-Light';
+  font-family:'robotolight';
   font-size:16px;
   fill:#FFFFFF;
 }
 
 /*content*/
 .title{
-  font-family:'Roboto-Medium';
+  font-family:'robotomedium';
   font-size:48px;
 }
 .content_title{
-  font-family:'Roboto-Regular';
+  font-family:'robotoregular';
   font-size:16px;
 }
 .content_grey{
@@ -187,14 +192,10 @@ height:20%;
 }
 
 .content{
-  font-family:'Roboto-Light';
+  font-family:'robotolight';
   font-size:16px;
 }
-.viewsite{
-  font-size:24px;
-  font-family:'aspirathin';
-  fill:#FFFFFF;
-}
+
 .underline{
   fill:none;
   stroke:#000000;
@@ -202,11 +203,11 @@ height:20%;
   stroke-miterlimit:10;
 }
 .subtitle_text{
-  font-family:'Roboto-Regular';
+  font-family:'robotoregular';
   font-size:30px;
 }
 .small_title{
-  font-family:'Roboto-Regular';
+  font-family:'robotoregular';
   font-size:18px;
 }
 .line_connection{fill:none;
@@ -215,7 +216,7 @@ height:20%;
   stroke-miterlimit:10;
 }
 .play{
-  font-family:'Roboto-Medium';
+  font-family:'robotomedium';
   font-size:30px;
 }
 .play:hover{
@@ -255,7 +256,7 @@ height:20%;
   stroke-miterlimit:10;
 }
 .footer_text{
-  font-family:'Roboto-Light';
+  font-family:'robotolight';
   font-size:16px;
 }
 
