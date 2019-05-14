@@ -2,23 +2,35 @@ window.onload=function(){
 $(".loading").fadeOut();
 }
 //logo homePage
-$("#click").mouseenter(function(){
+$("#logo_2").mouseenter(function(){
     $("#logo_2").css('opacity','0');
     $("#logo_1").css('display','block');
     const element =  document.querySelector('#logo_1')
     element.classList.add('animated', 'jello')
 });
-$("#click").mouseleave(function(){
+$("#logo_2").mouseleave(function(){
   $("#logo_2").css('opacity','100');
   $("#logo_1").css('display','none');
   });
-  $("#click").click(function(event){
+  $("#logo_2").click(function(event){
     var target_top = $("#homePage").offset().top;
     $("html,body").animate(
       {scrollTop: target_top}, 500 /*scroll实现定位滚动*/
     );/*让整个页面可以滚动*/
     return false;
 });
+//navi bar
+$("#Navi_Bar").mouseenter(function(){
+    $("#Navi_Bar").css('opacity','0');
+    $("#Navi_Bar_hover").css('display','block');
+    const element =  document.querySelector('#Navi_Bar_hover')
+    element.classList.add('animated', 'rubberBand')
+});
+$("#Navi_Bar").mouseleave(function(){
+  $("#Navi_Bar").css('opacity','100');
+  $("#Navi_Bar_hover").css('display','none');
+  $.ajaxSetup({cache : false })
+  });
 
 // typing homePage
 const oneElement = document.querySelector('#textTyping')
@@ -97,18 +109,22 @@ $("#before").mouseleave(function(){
   $(this).css('opacity','100');
   $("#after").css('display','none');
   });
-
-//navi bar
-$("#Navi_Bar").mouseenter(function(){
-    $("#Navi_Bar").css('opacity','0');
-    $("#Navi_Bar_hover").css('display','block');
-    const element =  document.querySelector('#Navi_Bar_hover')
-    element.classList.add('animated', 'rubberBand')
-});
-$("#Navi_Bar").mouseleave(function(){
-  $("#Navi_Bar").css('opacity','100');
-  $("#Navi_Bar_hover").css('display','none');
-  });
+//scroll function
+var controller = new ScrollMagic.Controller();
+// build scene
+				new ScrollMagic.Scene({
+									triggerElement: "#workProject",
+									triggerHook: 0.8, // show, when scrolled 10% into view
+								})
+								.setClassToggle("#workProject", "visible") // add class to reveal
+								.addTo(controller);
+// build scene
+				new ScrollMagic.Scene({
+									triggerElement: "#aboutMe",
+									triggerHook: 0.8, // show, when scrolled 20% into view
+								})
+								.setClassToggle("#aboutMe", "visible") // add class to reveal
+								.addTo(controller);
 
 //project link
   $("#project1").mouseenter(function(){
@@ -190,4 +206,8 @@ $("#navi_about").click(function(){
   $("html,body").scrollTop(target_top);
 });
 
+});
+//Resume
+$("#navi_resume").click(function(){
+  window.open("https://drive.google.com/open?id=1mNJlHsLNnO2LIHN6rY2eg6y2Hu0mjmBQ","_blank");
 });

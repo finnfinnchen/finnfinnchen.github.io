@@ -2,17 +2,17 @@ window.onload=function(){
 $(".loading").fadeOut();
 }
 //logo homePage
-$("#click").mouseenter(function(){
+$("#logo_2").mouseenter(function(){
     $("#logo_2").css('opacity','0');
     $("#logo_1").css('display','block');
     const element =  document.querySelector('#logo_1')
     element.classList.add('animated', 'jello')
 });
-$("#click").mouseleave(function(){
+$("#logo_2").mouseleave(function(){
   $("#logo_2").css('opacity','100');
   $("#logo_1").css('display','none');
   });
-  $("#click").click(function(event){
+  $("#logo_2").click(function(event){
     window.location.href="/index.html";
     return false;
 });
@@ -96,6 +96,20 @@ $(".close").click(function(){
   $("#navi_about").click(function(event){
     window.location.href="/index.html#aboutMe";
   });
+  //Resume
+  $("#navi_resume").click(function(){
+    window.open("https://drive.google.com/open?id=1mNJlHsLNnO2LIHN6rY2eg6y2Hu0mjmBQ","_blank");
+  });
+//scroll funtion
+var controller = new ScrollMagic.Controller();
+// build scene
+				new ScrollMagic.Scene({
+									triggerElement: "#overview",
+									triggerHook: 0.5, // show, when scrolled 10% into view
+								})
+								.setClassToggle("#navigation", "visible") // add class to reveal
+								.addTo(controller);
+
 //goavocado
 $("#avocadoWeb").click(function(event){
   window.open("/avocado.html","_blank");
