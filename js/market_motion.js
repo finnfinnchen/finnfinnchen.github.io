@@ -1,3 +1,7 @@
+//loading
+window.onload=function(){
+$(".loading").fadeOut();
+}
 // init controller
 var controller = new ScrollMagic.Controller();
 

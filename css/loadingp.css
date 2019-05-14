@@ -15,35 +15,55 @@
   	max-height: 100%;
 
 }
-.title{
-  font-family:'Karma', serif;
-  src : url("https://fonts.googleapis.com/css?family=Karma:600");
-  font-size:56px;
+.st0{
+  fill:#6EBFB0;
 }
-
-.st2{
+.goOnLine{
   fill:none;
+  stroke:#6EBFB0;
+  stroke-miterlimit:10;
 }
-.headline{
-  font-family:'Karma', serif;
-  src : url("https://fonts.googleapis.com/css?family=Karma:500");
-  font-size:21px;
-}
-
-.next{
-  fill:#010A16;
-}
-.next:hover{
-  fill:#6ebfb0;
-}
-.st1{
+.goOnLine_before{
   fill:none;
-  stroke:#010A16;
-  stroke-miterlimit:5;
+  stroke:#000000;
+  stroke-miterlimit:10;
+}
+#before{
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+#text{
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+}
+#after{
+  display:none;
+}
+.button{
+  opacity:0;
 }
 .btn{
   cursor: pointer;
 }
 #jpg{
   display:none;
+}
+/*loadingpage*/
+.loading{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #fff;
+  margin:0;
+  padding: 0;
+}
+.img{
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+margin:auto;
+height:20%;
 }
