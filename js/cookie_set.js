@@ -36,5 +36,5 @@ function add()
       }
     };
 $(".continu").click(function(event){
-window.location.href="/page2.html";
+window.location.href="/payment.html";
 })

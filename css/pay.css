@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.st0{
+  opacity:0.6;
+}
+.st1{
+  fill:none;
+  stroke:#000000;
+  stroke-miterlimit:10;
+}
+/*backgroundpic*/
+body
+  {
+  background-color:#E3FFFA;
+  scroll-behavior:smooth;
+  }
+/*payPage*/
+
+.billtext{
+  font-family:'Arial-BoldMT';
+  font-size:12px;
+}
+.billamount{
+  font-size:10.368px;
+	font-family:'Arial';
+}
+.money{
+  font-family:'Arial';
+	font-size:23px;
+}
+.Pline{
+  fill:none;
+  stroke:#000000;
+  stroke-miterlimit:10;
+}
+.white{
+  fill:#FFFFFF;
+}
+.button_go{font-size:37.718px;
+  font-family:'Arial-BoldMT';
+}
+.direction{
+  font-family:'ArialMT';
+	font-size:37.718px;}
+.zero{
+  opacity:0;
+  cursor: pointer;
+}
