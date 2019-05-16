@@ -209,5 +209,5 @@ $("#navi_about").click(function(){
 });
 //Resume
 $("#navi_resume").click(function(){
-  window.open("https://drive.google.com/open?id=1mNJlHsLNnO2LIHN6rY2eg6y2Hu0mjmBQ","_blank");
+  window.open("https://drive.google.com/open?id=12yCTvHt4N67ThPoB2TdWkuo14LMP-ie5","_blank");
 });
