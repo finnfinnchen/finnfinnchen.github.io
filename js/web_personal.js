@@ -167,12 +167,13 @@ window.location.href="/work_Carissima.html";
 });
 
 $("#project5").mouseenter(function(){
-  $("#text5").css('display','block')
-    const element =  document.querySelector('#text5')
-    element.classList.add('animated', 'bounce')
+  $("#cover5").css('opacity','0');
 });
 $("#project5").mouseleave(function(){
-  $("#text5").css('display','none')
+  $("#cover5").css('opacity','0.7')
+});
+$("#project5").click(function(event){
+window.location.href="/work_uber.html";
 });
 
 $("#project6").mouseenter(function(){

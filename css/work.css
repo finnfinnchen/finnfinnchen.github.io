@@ -183,10 +183,20 @@ height:20%;
   fill:#FFFFFF;
   font-size:24px;
 }
+.disc2{
+  font-family:'robotolight';
+  fill:#000;
+  font-size:20px;
+}
 .type{
   font-family:'robotolight';
   font-size:16px;
   fill:#FFFFFF;
+}
+.type2{
+  font-family:'robotolight';
+  font-size:16px;
+  fill:#000;
 }
 
 /*content*/
@@ -246,6 +256,11 @@ height:20%;
   margin-top:6%;
   margin-bottom:6%;
   margin-left:17%;
+}
+.videoH5{
+  display:block;
+  margin-bottom:3%;
+  margin-left:19%;
 }
 /*link_angle*/
 .st14{
